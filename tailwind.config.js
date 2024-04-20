@@ -1,0 +1,36 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      keyframes: {
+        animatedgradient: {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
+        },
+      },
+      backgroundSize: {
+        '300%': '300%',
+      },
+      animation: {
+        gradient: 'animatedgradient 6s ease infinite alternate',
+      },
+      fontFamily:{
+        inter:['Inter','sans-serif']
+      },
+      colors:{
+        'primary':'#FF211F',
+        'secundary':'#881514',
+        'primary-p': '#36485C',
+        'gr-secundary':'#ff211f',
+        'gr-ter': ''
+      }
+    },
+  },
+  plugins: [],
+}
+
